@@ -1,0 +1,64 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "boiler-plate for react apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build-dev": "webpack --watch --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "start-prod": "node server/index.js",
+    "db-loader": "node ./database/dbSeeder.js",
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "coverage": "./node_modules/.bin/codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaoR/react-boilerplate.git"
+  },
+  "author": "GaoR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaoR/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/GaoR/react-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-styled-components": "^1.7.1",
+    "codecov": "^3.1.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.2",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^4.3.1",
+    "styled-components": "^3.4.5",
+    "styled-reset": "^1.4.0"
+  }
+}
